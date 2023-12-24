@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">
+                Survey Form
+            </h1>
+            <p id="description">
+                freeCodeCamp Survey Form
+            </p>
+        </header>
+        <main>
+            <form action='https://register-demo.freecodecamp.org' id="survey-form">
+                <fieldset id="personal-information-fieldset">
+                    <label for="first-name">Enter Your First Name
+                        <input type="text" id="first-name" name="first-name" placeholder="Please enter your first name"
+                            required>
+                    </label>
+                    <label for="last-name">Enter Your Last Name
+                        <input type="text" id="last-name" name="last-name" placeholder="Please enter your last name"
+                            required>
+                    </label>
+                    <label for="email">Enter Your Email
+                        <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+                    </label>
+                    <label for="age">Enter Your Age
+                        <input type="number" id="age" name="age" min="18" max="120" placeholder="Please enter your age"
+                            required>
+                    </label>
+                </fieldset>
+
+                <fieldset id="gender-fieldset">
+                    <label for="dropdown">Plese Select Your Gender
+                        <select name="gender" id="dropdown">
+                            <option value="" selected disabled></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset id="">
+                    <p>Would you recommend us to a friend?</p>
+                    <label for="recommend-yes">
+                        <input type="radio" name="recommend" id="recommend-yes" class="inline" value="YES">
+                        YES
+                    </label>
+                    <label for="recommend-no">
+                        <input type="radio" name="recommend" id="recommend-no" class="inline" value="YES">
+                        NO
+                    </label>
+                    <label for="recommend-maybe">
+                        <input type="radio" name="recommend" id="recommend-maybe" class="inline" value="Maybe">
+                        Maybe
+                    </label>
+                </fieldset>
+                <fieldset id="hobbies">What is your hobbies?
+                    <label for="sport">
+                        <input type="checkbox" class="inline" name="sport" id="sport" value="sport">
+                        Sport
+                    </label>
+                    <label for="reading">
+                        <input type="checkbox" class="inline" name="reading" id="reading" value="reading">
+                        Reading
+                    </label>
+                    <label for="music">
+                        <input type="checkbox" class="inline" name="music" id="music" value="music">
+                        Music
+                    </label>
+                    <label for="surfing-the-web">
+                        <input type="checkbox" class="inline" name="surfing-the-web" id="surfing-the-web" value="surfing-the-web">
+                        Surfing the web
+                    </label>
+                    
+                </fieldset>
+                <fieldset>
+                    <label for="user-comment">Do you have any any suggestions or comment?
+                        <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Plese enter your comment...">
+
+                        </textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
